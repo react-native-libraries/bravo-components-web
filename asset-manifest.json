@@ -1,31 +1,19 @@
 {
   "files": {
-    "main.css": "/bravo-components-web/static/css/main.3a1b5ec5.chunk.css",
-    "main.js": "/bravo-components-web/static/js/main.67723b03.chunk.js",
-    "main.js.map": "/bravo-components-web/static/js/main.67723b03.chunk.js.map",
-    "runtime-main.js": "/bravo-components-web/static/js/runtime-main.984570da.js",
-    "runtime-main.js.map": "/bravo-components-web/static/js/runtime-main.984570da.js.map",
-    "static/css/2.800b4633.chunk.css": "/bravo-components-web/static/css/2.800b4633.chunk.css",
-    "static/js/2.87660796.chunk.js": "/bravo-components-web/static/js/2.87660796.chunk.js",
-    "static/js/2.87660796.chunk.js.map": "/bravo-components-web/static/js/2.87660796.chunk.js.map",
+    "app.js": "/bravo-components-web/static/js/app.1e9f9b4d.chunk.js",
+    "app.js.map": "/bravo-components-web/static/js/app.1e9f9b4d.chunk.js.map",
+    "runtime~app.js": "/bravo-components-web/static/js/runtime~app.5d27cb06.js",
+    "runtime~app.js.map": "/bravo-components-web/static/js/runtime~app.5d27cb06.js.map",
+    "static/js/2.406e72c6.chunk.js": "/bravo-components-web/static/js/2.406e72c6.chunk.js",
+    "static/js/2.406e72c6.chunk.js.map": "/bravo-components-web/static/js/2.406e72c6.chunk.js.map",
     "index.html": "/bravo-components-web/index.html",
-    "precache-manifest.36310712e8d20bb51947bb0a4ecb34c9.js": "/bravo-components-web/precache-manifest.36310712e8d20bb51947bb0a4ecb34c9.js",
-    "service-worker.js": "/bravo-components-web/service-worker.js",
-    "static/css/2.800b4633.chunk.css.map": "/bravo-components-web/static/css/2.800b4633.chunk.css.map",
-    "static/css/main.3a1b5ec5.chunk.css.map": "/bravo-components-web/static/css/main.3a1b5ec5.chunk.css.map",
-    "static/js/2.87660796.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.87660796.chunk.js.LICENSE.txt",
-    "static/js/main.67723b03.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/main.67723b03.chunk.js.LICENSE.txt",
-    "static/media/Evolog_Motorista_Overview.mp4": "/bravo-components-web/static/media/Evolog_Motorista_Overview.53504bb7.mp4",
-    "static/media/bg5.jpg": "/bravo-components-web/static/media/bg5.056eb058.jpg",
-    "static/media/logo-white.svg": "/bravo-components-web/static/media/logo-white.a80cd7a7.svg",
-    "static/media/mike.jpg": "/bravo-components-web/static/media/mike.aab414f7.jpg",
-    "static/media/now-ui-dashboard.scss?v1.4.0": "/bravo-components-web/static/media/nucleo-outline.8ebec31f.woff2"
+    "manifest.json": "/bravo-components-web/manifest.json",
+    "serve.json": "/bravo-components-web/serve.json",
+    "static/js/2.406e72c6.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.406e72c6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.984570da.js",
-    "static/css/2.800b4633.chunk.css",
-    "static/js/2.87660796.chunk.js",
-    "static/css/main.3a1b5ec5.chunk.css",
-    "static/js/main.67723b03.chunk.js"
+    "static/js/runtime~app.5d27cb06.js",
+    "static/js/2.406e72c6.chunk.js",
+    "static/js/app.1e9f9b4d.chunk.js"
   ]
 }
