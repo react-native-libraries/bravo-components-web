@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bravo-components-web/precache-manifest.e8ccdaa636c809eb470cb9b1f974069f.js"
+  "/bravo-components-web/precache-manifest.36310712e8d20bb51947bb0a4ecb34c9.js"
 );
 
 self.addEventListener('message', (event) => {
