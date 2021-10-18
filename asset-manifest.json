@@ -1,7 +1,7 @@
 {
   "files": {
-    "app.js": "/bravo-components-web/static/js/app.c13c7e78.chunk.js",
-    "app.js.map": "/bravo-components-web/static/js/app.c13c7e78.chunk.js.map",
+    "app.js": "/bravo-components-web/static/js/app.2feec849.chunk.js",
+    "app.js.map": "/bravo-components-web/static/js/app.2feec849.chunk.js.map",
     "runtime~app.js": "/bravo-components-web/static/js/runtime~app.5d27cb06.js",
     "runtime~app.js.map": "/bravo-components-web/static/js/runtime~app.5d27cb06.js.map",
     "static/js/2.39e1c616.chunk.js": "/bravo-components-web/static/js/2.39e1c616.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime~app.5d27cb06.js",
     "static/js/2.39e1c616.chunk.js",
-    "static/js/app.c13c7e78.chunk.js"
+    "static/js/app.2feec849.chunk.js"
   ]
 }
