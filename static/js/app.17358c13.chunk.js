@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[0],{140:function(e,t,n){e.exports=n(189)},189:function(e,t,n){"use strict";n.r(t);n(102);var a=n(198),c=n(108),r=n(0),i=n.n(r),o=n(9),p=n(59),s=function(){return i.a.createElement(o.a,null,i.a.createElement(p.a,null,"P\xc1GINA HOME"))},u=Object(c.createSwitchNavigator)({Home:s}),l=Object(c.createAppContainer)(u);Object(a.a)(l)}},[[140,1,2]]]);
+//# sourceMappingURL=app.17358c13.chunk.js.map
