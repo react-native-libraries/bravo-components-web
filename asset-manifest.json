@@ -1,19 +1,19 @@
 {
   "files": {
-    "app.js": "/bravo-components-web/static/js/app.a6438df6.chunk.js",
-    "app.js.map": "/bravo-components-web/static/js/app.a6438df6.chunk.js.map",
+    "app.js": "/bravo-components-web/static/js/app.d5ea2beb.chunk.js",
+    "app.js.map": "/bravo-components-web/static/js/app.d5ea2beb.chunk.js.map",
     "runtime~app.js": "/bravo-components-web/static/js/runtime~app.5d27cb06.js",
     "runtime~app.js.map": "/bravo-components-web/static/js/runtime~app.5d27cb06.js.map",
-    "static/js/2.608f5ef0.chunk.js": "/bravo-components-web/static/js/2.608f5ef0.chunk.js",
-    "static/js/2.608f5ef0.chunk.js.map": "/bravo-components-web/static/js/2.608f5ef0.chunk.js.map",
+    "static/js/2.cba5c044.chunk.js": "/bravo-components-web/static/js/2.cba5c044.chunk.js",
+    "static/js/2.cba5c044.chunk.js.map": "/bravo-components-web/static/js/2.cba5c044.chunk.js.map",
     "index.html": "/bravo-components-web/index.html",
     "manifest.json": "/bravo-components-web/manifest.json",
     "serve.json": "/bravo-components-web/serve.json",
-    "static/js/2.608f5ef0.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.608f5ef0.chunk.js.LICENSE.txt"
+    "static/js/2.cba5c044.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.cba5c044.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.5d27cb06.js",
-    "static/js/2.608f5ef0.chunk.js",
-    "static/js/app.a6438df6.chunk.js"
+    "static/js/2.cba5c044.chunk.js",
+    "static/js/app.d5ea2beb.chunk.js"
   ]
 }
