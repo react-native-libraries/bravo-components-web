@@ -2,13 +2,18 @@
   "homepage": "http://react-native-libraries.github.io/bravo-components-web",
   "scripts": {
     "deploy": "gh-pages -d web-build",
-    "predeploy": "expo build:web"
+    "predeploy": "yarn add gh-pages && expo build:web"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-navigation/core": "5.2.3",
+    "@react-navigation/native": "5.3.1",
+    "@react-navigation/stack": "5.3.3",
     "expo": "~42.0.1",
     "expo-splash-screen": "~0.11.2",
     "expo-status-bar": "~1.0.4",
     "expo-updates": "~0.8.1",
+    "gh-pages": "^3.2.3",
     "react": "16.13.1",
     "react-dom": "^17.0.2",
     "react-native": "~0.63.4",
@@ -21,7 +26,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "gh-pages": "^3.2.3"
+    "metro-react-native-babel-preset": "^0.66.2"
   },
   "private": true
 }

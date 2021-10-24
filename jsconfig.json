@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@components/*": ["./application/bravo-components/components/*"],
+        "@routes/*": ["./application/routes/*"],
+        "@services/*": ["./application/services/*"],
+        "@screens/*": ["./application/screens/*"],
+        "@layout/*": ["./application/layout/*"]
+      }
+    },
+    "exclude": ["node_modules", "dist"]
+  }
+
