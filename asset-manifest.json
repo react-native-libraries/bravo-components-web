@@ -1,19 +1,37 @@
 {
   "files": {
-    "app.js": "/bravo-components-web/static/js/app.03ce90c0.chunk.js",
-    "app.js.map": "/bravo-components-web/static/js/app.03ce90c0.chunk.js.map",
+    "app.js": "/bravo-components-web/static/js/app.62ce7176.chunk.js",
+    "app.js.map": "/bravo-components-web/static/js/app.62ce7176.chunk.js.map",
     "runtime~app.js": "/bravo-components-web/static/js/runtime~app.5d27cb06.js",
     "runtime~app.js.map": "/bravo-components-web/static/js/runtime~app.5d27cb06.js.map",
-    "static/js/2.75375c2f.chunk.js": "/bravo-components-web/static/js/2.75375c2f.chunk.js",
-    "static/js/2.75375c2f.chunk.js.map": "/bravo-components-web/static/js/2.75375c2f.chunk.js.map",
+    "static/js/2.bf61fb33.chunk.js": "/bravo-components-web/static/js/2.bf61fb33.chunk.js",
+    "static/js/2.bf61fb33.chunk.js.map": "/bravo-components-web/static/js/2.bf61fb33.chunk.js.map",
     "index.html": "/bravo-components-web/index.html",
     "manifest.json": "/bravo-components-web/manifest.json",
     "serve.json": "/bravo-components-web/serve.json",
-    "static/js/2.75375c2f.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.75375c2f.chunk.js.LICENSE.txt"
+    "static/js/2.bf61fb33.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.bf61fb33.chunk.js.LICENSE.txt",
+    "static/media/card_release_checkin.png": "/bravo-components-web/static/media/card_release_checkin.dac35890.png",
+    "static/media/fundo.png": "/bravo-components-web/static/media/fundo.3033f2e4.png",
+    "static/media/gift_voucher.png": "/bravo-components-web/static/media/gift_voucher.6df4c9db.png",
+    "static/media/header.png": "/bravo-components-web/static/media/header.e835c185.png",
+    "static/media/icon_location.png": "/bravo-components-web/static/media/icon_location.09804155.png",
+    "static/media/info.png": "/bravo-components-web/static/media/info.2caaa9f7.png",
+    "static/media/logo_evolog.png": "/bravo-components-web/static/media/logo_evolog.592a1610.png",
+    "static/media/logo_evolog_header.png": "/bravo-components-web/static/media/logo_evolog_header.de076e10.png",
+    "static/media/map.png": "/bravo-components-web/static/media/map.fd374c13.png",
+    "static/media/sair.png": "/bravo-components-web/static/media/sair.f67dbd20.png",
+    "static/media/satellite.png": "/bravo-components-web/static/media/satellite.b5010327.png",
+    "static/media/shield.png": "/bravo-components-web/static/media/shield.1c3823a7.png",
+    "static/media/signin.png": "/bravo-components-web/static/media/signin.ffced53f.png",
+    "static/media/splash.png": "/bravo-components-web/static/media/splash.d7a5727c.png",
+    "static/media/star.png": "/bravo-components-web/static/media/star.b1223205.png",
+    "static/media/truck.png": "/bravo-components-web/static/media/truck.131b5897.png",
+    "static/media/voucher.png": "/bravo-components-web/static/media/voucher.3d038d40.png",
+    "static/media/warehouse.png": "/bravo-components-web/static/media/warehouse.11993da3.png"
   },
   "entrypoints": [
     "static/js/runtime~app.5d27cb06.js",
-    "static/js/2.75375c2f.chunk.js",
-    "static/js/app.03ce90c0.chunk.js"
+    "static/js/2.bf61fb33.chunk.js",
+    "static/js/app.62ce7176.chunk.js"
   ]
 }
