@@ -6,7 +6,8 @@
         "@routes/*": ["./application/routes/*"],
         "@services/*": ["./application/services/*"],
         "@screens/*": ["./application/screens/*"],
-        "@layout/*": ["./application/layout/*"]
+        "@layout/*": ["./application/layout/*"],
+        "@assets/*": ["./application/assets/*"],
       }
     },
     "exclude": ["node_modules", "dist"]

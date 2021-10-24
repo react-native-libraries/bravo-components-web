@@ -1,80 +1,49 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { ImageBackground, Image, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import BtnDropdown from '@components/Buttons/BtnDropdown';
-
+import { routes } from '@routes/'
+import { images } from '@assets/';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 const WebLayout = ({ navigation, children }) => {
+    
+    console.log(images);
 
-    const [navigator, setNavigator] = useState("Home");
-    const [route, setRoute] = useState("Home");
+    // const [navigator, setNavigator] = useState("Home");
+    // const [route, setRoute] = useState("Home");
 
     // ==========================================================================
     const navigate = (_navigator, _route) => {
         console.log(`${_navigator} -> ${_route}`);
-        if (_navigator != navigator) {
-            console.log(`NAV: INDO DE ${navigator} PARA ${_navigator}`);
-            setNavigator(_navigator);
+        // if (_navigator != navigator) {
+            //setNavigator(_navigator);
             navigation.navigate(_navigator);
-        }
+        // }
 
         if (_route) {
-            if (_route != route) {
-                console.log(`ROUTE: INDO DE ${route} PARA ${_route}`);
-                setRoute(_route);
+            // if (_route != route) {
+                //setRoute(_route);
                 navigation.navigate(_route);
-            }
+            // }
         }
     };
 
     const renderTop = () => {
         return (
-            <View
-                style={styles.sidebarTop}
-            >
-
-            </View>
+            <>
+                <Image source={{uri: images.LOGO_EVOLOG}} style={{width: '80%', height: 62}} />
+                <View style={styles.sidebarTopMenu}>
+                    <Text style={styles.sidebarTopMenuText}>Convidado</Text>
+                    <TouchableOpacity style={styles.sidebarTopMenuAction}>
+                        <Image source={{uri: images.ICON_SIGNIN}} style={{width: 20, height: 20}} />
+                    </TouchableOpacity>
+                </View>
+            </>
         );
     };
 
     const renderMenu = () => {
-        const items = [
-            {
-                title: 'Home',
-                route: 'Home'
-            },
-            {
-                title: 'Dashboard',
-                route: 'Dashboard'
-            },
-            {
-                title: 'Artefatos',
-                multi: true,
-                navigator: 'Artifacts',
-                routes: [
-                    {
-                        title: 'Overview',
-                        route: 'Overview'
-                    },
-                    {
-                        title: 'Evolog Motorista',
-                        route: 'EvologMotorista'
-                    },
-                    {
-                        title: 'Evolog Checklist',
-                        route: 'EvologChecklist'
-                    },
-                    {
-                        title: 'Evolog Comercial',
-                        route: 'EvologComercial'
-                    },
-                    {
-                        title: 'Evolog Checkin',
-                        route: 'EvologCheckin'
-                    }
-                ]
-            }
-        ];
 
         const prepareRoutes = (_items, _nav) => {
             return _items.map((i) => {
@@ -89,11 +58,11 @@ const WebLayout = ({ navigation, children }) => {
             });
         };
 
-        return items.map((i) => {
+        return routes.map((i) => {
             if (i.multi) {
                 return (
                     <BtnDropdown
-                        text="Artefatos"
+                        text={i.title}
                         textStyle={styles.sidebarLinkText}
                         buttonStyle={styles.sidebarLink}
                         containerStyle={styles.sidebarLinkContainer}
@@ -117,14 +86,16 @@ const WebLayout = ({ navigation, children }) => {
 
     return (
         <View style={styles.body}>
-            <View style={styles.sidebar}>
+            <ImageBackground source={{uri: images.BG_DARK}} style={styles.sidebar}>
                 <View style={styles.sidebarTop}>
                     {renderTop()}
                 </View>
-                <ScrollView style={styles.sidebarScrollView}>
-                    {renderMenu()}
-                </ScrollView>
-            </View>
+                <Scrollbars style={styles.sidebarScrollView}>
+                    <View style={styles.sidebarScrollViewChild}>
+                        {renderMenu()}
+                    </View>
+                </Scrollbars>
+            </ImageBackground>
             <ScrollView style={styles.contentView}>
                 <View style={styles.contentWrapper}>
                     {children}
@@ -145,7 +116,6 @@ const styles = StyleSheet.create({
         left: 25,
         width: 250,
         height: '100%',
-        backgroundColor: '#fff',
 
         shadowColor: "#000",
         shadowOffset: {
@@ -159,15 +129,57 @@ const styles = StyleSheet.create({
         zIndex: 10
     },
     sidebarTop: {
+        height: '30%',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
+    },
+    sidebarTopMenu: {
+        marginTop: 30,
+        width: '75%',
+        height: 35,
+        borderRadius: '1vw',
+        backgroundColor: '#fff',
 
+        flexDirection: 'row',
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.39,
+        shadowRadius: 8.30,
+
+        elevation: 13,
+        
+        alignItems: 'center',
+        gap: '1rem'
+    },
+    sidebarTopMenuText: {
+        flex: 70,
+        textAlign: 'center',
+        color: '#bbb',
+        fontSize: '1.1rem'
+    },
+    sidebarTopMenuAction: {
+        flex: 30,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     sidebarScrollView: {
         flexDirection: 'column',
-        padding: '1rem',
-        backgroundColor: '#eee'
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    sidebarScrollViewChild: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column'
     },
     sidebarLink: {
-        width: '100%',
+        width: '80%',
         height: 40,
         justifyContent: 'center',
         alignItems: 'center',

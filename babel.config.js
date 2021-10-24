@@ -22,7 +22,8 @@ module.exports = function(api) {
             "@routes": "./application/routes",
             "@services": "./application/services",
             "@screens": "./application/screens",
-            "@layout": "./application/layout"
+            "@layout": "./application/layout",
+            "@assets": "./application/assets",
           }
         },
         'react-native-reanimated/plugin',
