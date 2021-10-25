@@ -43,3 +43,37 @@ const Artifacts = () => {
 };
 
 export default Artifacts;
+
+/*
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { tools } from "@utils/";
+
+const ArtifactsStack = createStackNavigator();
+
+//SCREENS
+import OverviewScreen from "@screens/Artifacts/Overview";
+import EvologMotoristaScreen from "@screens/Artifacts/EvologMotorista";
+import EvologCheckinScreen from "@screens/Artifacts/EvologCheckin";
+import EvologChecklistScreen from "@screens/Artifacts/EvologChecklist";
+import EvologComercialScreen from "@screens/Artifacts/EvologComercial";
+
+let Artifacts = {
+  stack: ArtifactsStack,
+  screenOptions: { headerShown: false, animationEnabled: false },
+  screens: [
+    { name: "Overview", component: OverviewScreen},
+    { name: "EvologMotorista", component: EvologMotoristaScreen},
+    { name: "EvologChecklist", component: EvologChecklistScreen},
+    { name: "EvologComercial", component: EvologComercialScreen},
+    { name: "EvologCheckin", component: EvologCheckinScreen}
+  ]
+};
+
+Artifacts = tools.StackBuilder(Artifacts);
+
+console.log(Artifacts);
+
+export default Artifacts;
+
+*/

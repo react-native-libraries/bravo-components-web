@@ -5,11 +5,9 @@ import BtnDropdown from '@components/Buttons/BtnDropdown';
 import { routes } from '@routes/'
 import { images } from '@assets/';
 import { Scrollbars } from 'react-custom-scrollbars';
+import Breadcrumbs from '@components/Headers/Breadcrumbs';
 
-const WebLayout = ({ navigation, children }) => {
-    
-    console.log(images);
-
+const WebLayout = ({ navigation, breadcrumbs, title, children }) => {
     // const [navigator, setNavigator] = useState("Home");
     // const [route, setRoute] = useState("Home");
 
@@ -17,26 +15,35 @@ const WebLayout = ({ navigation, children }) => {
     const navigate = (_navigator, _route) => {
         console.log(`${_navigator} -> ${_route}`);
         // if (_navigator != navigator) {
-            //setNavigator(_navigator);
-            navigation.navigate(_navigator);
+        //setNavigator(_navigator);
+        navigation.navigate(_navigator);
         // }
 
         if (_route) {
             // if (_route != route) {
-                //setRoute(_route);
-                navigation.navigate(_route);
+            //setRoute(_route);
+            navigation.navigate(_route);
             // }
         }
+    };
+
+    const renderTitle = () => {
+        return (
+            <View style={styles.contentWrapper}>
+                {breadcrumbs && <Breadcrumbs links={breadcrumbs} />}
+                {title && <Text style={styles.contentTitle}>{title}</Text>}
+            </View>
+        );
     };
 
     const renderTop = () => {
         return (
             <>
-                <Image source={{uri: images.LOGO_EVOLOG}} style={{width: '80%', height: 62}} />
+                <Image source={{ uri: images.LOGO_EVOLOG }} style={{ width: '80%', height: 62 }} />
                 <View style={styles.sidebarTopMenu}>
                     <Text style={styles.sidebarTopMenuText}>Convidado</Text>
                     <TouchableOpacity style={styles.sidebarTopMenuAction}>
-                        <Image source={{uri: images.ICON_SIGNIN}} style={{width: 20, height: 20}} />
+                        <Image source={{ uri: images.ICON_SIGNIN }} style={{ width: 20, height: 20 }} />
                     </TouchableOpacity>
                 </View>
             </>
@@ -86,7 +93,7 @@ const WebLayout = ({ navigation, children }) => {
 
     return (
         <View style={styles.body}>
-            <ImageBackground source={{uri: images.BG_DARK}} style={styles.sidebar}>
+            <ImageBackground source={{ uri: images.BG_DARK }} style={styles.sidebar}>
                 <View style={styles.sidebarTop}>
                     {renderTop()}
                 </View>
@@ -97,6 +104,9 @@ const WebLayout = ({ navigation, children }) => {
                 </Scrollbars>
             </ImageBackground>
             <ScrollView style={styles.contentView}>
+                { (title || breadcrumbs) &&
+                    renderTitle()
+                }
                 <View style={styles.contentWrapper}>
                     {children}
                 </View>
@@ -153,7 +163,7 @@ const styles = StyleSheet.create({
         shadowRadius: 8.30,
 
         elevation: 13,
-        
+
         alignItems: 'center',
         gap: '1rem'
     },
@@ -226,7 +236,7 @@ const styles = StyleSheet.create({
         color: '#777',
         fontWeight: 'normal',
         fontSize: '0.8rem'
-    },  
+    },
     contentView: {
         position: 'fixed',
         top: 0,
@@ -250,6 +260,13 @@ const styles = StyleSheet.create({
         shadowRadius: 2.62,
 
         elevation: 4,
+    },
+    contentTitle: {
+        fontWeight: 'bold',
+        fontSize: '3rem',
+        color: '#444',
+        borderColor: '#444',
+        borderBottomWidth: 2
     }
 });
 

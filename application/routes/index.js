@@ -82,14 +82,14 @@ export const routes = [
     multi: true,
     navigator: 'Components',
     routes: [
-      {
-        title: 'Overview',
-        route: 'Overview'
-      },
-      {
-          title: 'Botões',
-          route: 'Buttons '
-      },
-    ]
+          {
+              title: 'Overview',
+              route: 'Overview'
+          },
+          {
+              title: 'Botões',
+              route: 'Buttons'
+          },
+      ]
   }
 ];

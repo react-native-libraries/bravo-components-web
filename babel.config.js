@@ -24,6 +24,7 @@ module.exports = function(api) {
             "@screens": "./application/screens",
             "@layout": "./application/layout",
             "@assets": "./application/assets",
+            "@utils": "./application/utils",
           }
         },
         'react-native-reanimated/plugin',

@@ -4,9 +4,24 @@ import WebLayout from '@layout/WebLayout';
 
 const Home = ({ navigation }) => {
 
+    const breadcrumbs = {
+        navigator: 'Home',
+        routes: [
+            {
+                title: 'Home',
+                route: 'Home'
+            },
+            {
+                title: 'Home',
+                route: 'Home'
+            }
+        ]
+    };
 
     return (
         <WebLayout
+            title="Home"
+            breadcrumbs={breadcrumbs}
             navigation={navigation}
         >
             <View>

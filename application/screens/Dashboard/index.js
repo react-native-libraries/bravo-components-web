@@ -3,14 +3,30 @@ import { View, Text } from 'react-native';
 import WebLayout from '@layout/WebLayout';
 
 const Dashboard = ({ navigation }) => {
+    const breadcrumbs = {
+        navigator: 'Dashboard',
+        routes: [
+            {
+                title: 'Dashboard',
+                route: 'Dashboard'
+            },
+            {
+                title: 'Dashboard',
+                route: 'Dashboard'
+            }
+        ]
+    };
+
     return (
-        <WebLayout
-            navigation={navigation}
-        >
-            <View>
-                <Text>Dashboard</Text>
-            </View>
-        </WebLayout>
+            <WebLayout
+                title="Dashboard"
+                breadcrumbs={breadcrumbs}
+                navigation={navigation}
+            >
+                <View>
+                    <Text>Dashboard</Text>
+                </View>
+            </WebLayout>
     );
 };
 

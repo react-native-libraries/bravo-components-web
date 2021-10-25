@@ -8,6 +8,7 @@
         "@screens/*": ["./application/screens/*"],
         "@layout/*": ["./application/layout/*"],
         "@assets/*": ["./application/assets/*"],
+        "@utils/*": ["./application/utils/*"],
       }
     },
     "exclude": ["node_modules", "dist"]

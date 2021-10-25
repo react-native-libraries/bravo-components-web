@@ -3,14 +3,28 @@ import { View, Text, StyleSheet } from 'react-native';
 import WebLayout from '@layout/WebLayout';
 
 const EvologComercial = ({ navigation }) => {
-
+    const breadcrumbs = {
+        navigator: 'Artifacts',
+        routes: [
+            {
+                title: 'Artifacts',
+                route: 'Overview'
+            },
+            {
+                title: 'Evolog Comercial',
+                route: 'EvologComercial'
+            }
+        ]
+    };
 
     return (
         <WebLayout
+            title="Evolog Comercial"
+            breadcrumbs={breadcrumbs}
             navigation={navigation}
         >
             <View>
-                <Text>EvologComercial</Text>
+                <Text>Evolog Comercial</Text>
             </View>
         </WebLayout>
     );
