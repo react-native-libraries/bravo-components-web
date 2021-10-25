@@ -1,15 +1,15 @@
 {
   "files": {
-    "app.js": "/bravo-components-web/static/js/app.62ce7176.chunk.js",
-    "app.js.map": "/bravo-components-web/static/js/app.62ce7176.chunk.js.map",
+    "app.js": "/bravo-components-web/static/js/app.548ba3cc.chunk.js",
+    "app.js.map": "/bravo-components-web/static/js/app.548ba3cc.chunk.js.map",
     "runtime~app.js": "/bravo-components-web/static/js/runtime~app.5d27cb06.js",
     "runtime~app.js.map": "/bravo-components-web/static/js/runtime~app.5d27cb06.js.map",
-    "static/js/2.bf61fb33.chunk.js": "/bravo-components-web/static/js/2.bf61fb33.chunk.js",
-    "static/js/2.bf61fb33.chunk.js.map": "/bravo-components-web/static/js/2.bf61fb33.chunk.js.map",
+    "static/js/2.c5c91be1.chunk.js": "/bravo-components-web/static/js/2.c5c91be1.chunk.js",
+    "static/js/2.c5c91be1.chunk.js.map": "/bravo-components-web/static/js/2.c5c91be1.chunk.js.map",
     "index.html": "/bravo-components-web/index.html",
     "manifest.json": "/bravo-components-web/manifest.json",
     "serve.json": "/bravo-components-web/serve.json",
-    "static/js/2.bf61fb33.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.bf61fb33.chunk.js.LICENSE.txt",
+    "static/js/2.c5c91be1.chunk.js.LICENSE.txt": "/bravo-components-web/static/js/2.c5c91be1.chunk.js.LICENSE.txt",
     "static/media/card_release_checkin.png": "/bravo-components-web/static/media/card_release_checkin.dac35890.png",
     "static/media/fundo.png": "/bravo-components-web/static/media/fundo.3033f2e4.png",
     "static/media/gift_voucher.png": "/bravo-components-web/static/media/gift_voucher.6df4c9db.png",
@@ -31,7 +31,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.5d27cb06.js",
-    "static/js/2.bf61fb33.chunk.js",
-    "static/js/app.62ce7176.chunk.js"
+    "static/js/2.c5c91be1.chunk.js",
+    "static/js/app.548ba3cc.chunk.js"
   ]
 }
