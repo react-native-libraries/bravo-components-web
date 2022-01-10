@@ -5,7 +5,7 @@ import BtnDropdown from '@components/Buttons/BtnDropdown';
 import { routes } from '@routes/'
 import { images } from '@assets/';
 import { Scrollbars } from 'react-custom-scrollbars';
-import Breadcrumbs from '@components/Headers/Breadcrumbs';
+import { Breadcrumbs } from '@components/all';
 
 const WebLayout = ({ navigation, breadcrumbs, title, children }) => {
     // const [navigator, setNavigator] = useState("Home");
@@ -15,13 +15,13 @@ const WebLayout = ({ navigation, breadcrumbs, title, children }) => {
     const navigate = (_navigator, _route) => {
         console.log(`${_navigator} -> ${_route}`);
         // if (_navigator != navigator) {
-        //setNavigator(_navigator);
+        // setNavigator(_navigator);
         navigation.navigate(_navigator);
         // }
 
         if (_route) {
             // if (_route != route) {
-            //setRoute(_route);
+            // setRoute(_route);
             navigation.navigate(_route);
             // }
         }
@@ -36,7 +36,7 @@ const WebLayout = ({ navigation, breadcrumbs, title, children }) => {
         );
     };
 
-    const renderTop = () => {
+    const renderSidebarTop = () => {
         return (
             <>
                 <Image source={{ uri: images.LOGO_EVOLOG }} style={{ width: '80%', height: 62 }} />
@@ -50,7 +50,7 @@ const WebLayout = ({ navigation, breadcrumbs, title, children }) => {
         );
     };
 
-    const renderMenu = () => {
+    const renderSidebarMenu = () => {
 
         const prepareRoutes = (_items, _nav) => {
             return _items.map((i) => {
@@ -95,11 +95,11 @@ const WebLayout = ({ navigation, breadcrumbs, title, children }) => {
         <View style={styles.body}>
             <ImageBackground source={{ uri: images.BG_DARK }} style={styles.sidebar}>
                 <View style={styles.sidebarTop}>
-                    {renderTop()}
+                    {renderSidebarTop()}
                 </View>
                 <Scrollbars style={styles.sidebarScrollView}>
                     <View style={styles.sidebarScrollViewChild}>
-                        {renderMenu()}
+                        {renderSidebarMenu()}
                     </View>
                 </Scrollbars>
             </ImageBackground>
